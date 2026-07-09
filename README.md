@@ -1,6 +1,8 @@
 
 # 🏥 Clinical Trial Disease Category Classification Using NLP and Machine Learning
 
+![Alternative Text Label](ui.png)
+
 ## Domain & System Scope
 * **Domain:** Healthcare Analytics, Medical NLP & Clinical Trial Intelligence Systems.
 * **Framework Type:** Supervised Machine Learning Text Classification.
