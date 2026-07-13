@@ -102,17 +102,7 @@ if 'study_type' in df.columns:
     plt.tight_layout()
     plt.savefig('study_type_distribution.png')
     plt.close()
-
-# Chart 5: Gender Distribution
-if 'sex' in df.columns:
-    plt.figure(figsize=(6, 6))
-    sex_data = df['sex'].dropna().value_counts()
-    plt.pie(sex_data, labels=sex_data.index, autopct='%1.1f%%', colors=['#ff9999','#66b3ff','#99ff99'], startangle=90)
-    plt.title('Patient Gender Eligibility Distribution')
-    plt.tight_layout()
-    plt.savefig('gender_distribution.png')
-    plt.close()
-
+    
 X = df['cleaned_summary']
 y = df['target_encoded']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
