@@ -50,7 +50,7 @@ df['cleaned_summary'] = df[text_col].apply(clean_medical_text)
 label_encoder = LabelEncoder()
 df['target_encoded'] = label_encoder.fit_transform(df[target_col])
 
-print("Generating and saving all 5 required analytical charts...")
+print("Generating and saving all 4 required analytical charts...")
 
 # Chart 1: Disease Category
 plt.figure(figsize=(12, 6))
